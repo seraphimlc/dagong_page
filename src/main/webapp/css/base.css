@@ -1,0 +1,316 @@
+xxhtml {
+	color: #333;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+th {
+	text-align: inherit
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+select,textarea {  -webkit-appearance: none;}  
+textarea {
+    resize: none;
+}
+button{ border-radius: 0; } 
+
+fieldset, img {
+	border: 0
+}
+iframe {
+	display: block
+}
+abbr, acronym {
+	border: 0;
+	font-variant: normal
+}
+del {
+	text-decoration: line-through
+}
+address, caption, cite, code, dfn, em, th, var, i, b {
+	font-style: normal;
+	font-weight: 500
+}
+ol, ul {
+	list-style: none
+}
+h1, h2, h3, h4, h5, h6, b {
+	font-size: 100%;
+	font-weight: 500
+}
+q:before, q:after {
+	content: ''
+}
+a {
+	color: #666;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+a:visited, a:hover {
+	text-decoration: none
+}
+
+html{
+	font-size: 50px;
+}
+html, body {
+	min-height: 100%
+}
+body, button, input, select, textarea {
+	font: 14px/1.5 arial, Microsoft YaHei, \5b8b\4f53;
+	color: #333
+}
+input, select, textarea {
+	font-size: 100%
+}
+ins, a {
+	text-decoration: none
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "\20 ";
+	clear: both;
+	height: 0
+}
+.clearfix {
+	zoom: 1
+}
+.nowrap {
+	white-space: nowrap;
+	word-break: keep-all
+}
+.wrap {
+	white-space: normal;
+	word-break: break-all
+}
+.ellipsis {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+	word-wrap: normal
+}
+
+.t_c {
+	text-align:center;
+}
+
+.v_m {
+	vertical-align:middle;
+}
+.v_t {
+	vertical-align:top;
+}
+body { 
+  color: #333; 
+  font-family:Microsoft YaHei;
+  background:#f0f0f0;
+}
+input {
+	font-family:Microsoft YaHei;
+	border:0;
+}
+.ff {
+	
+}
+table {
+	 border-collapse:collapse;
+}
+.f_b {
+	font-weight:bold;
+}
+a {
+  color: #333;
+  text-decoration:none;
+}
+.c_f { 
+  color:#fff;
+}
+.l { 
+    float:left;
+}
+.r {
+	float:right;
+}
+.bod {
+	border:1px solid #d3d3d3;
+}
+.c_6 {
+	color:#666;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+.f36 {
+	font-size:200%;
+}
+.f18 {
+	font-size:18px;
+}
+.f16 {
+	font-size:16px;
+}
+.f14 {
+	font-size:14px;
+}
+.pl1 {
+	padding-left:0.1rem;
+}
+.t_r {
+	text-align:right;
+}
+.mt {
+	 margin-top:10px;
+}
+.red {
+	color:#ec4d35;
+}
+.wrap {
+    width:100%;
+	overflow:hidden;
+    min-width: 320px;
+    margin: 0px auto;
+    max-width: 640px;
+	line-height:0.5rem;
+}
+
+.c_9 {
+	color:#999;
+}
+.ml {
+	margin-left:10px;
+}
+
+.c_p {
+	cursor:pointer;
+}
+.blue{
+	color:#2e8adf;
+	}
+.b_t {
+	border-top:1px solid #ddd;
+}
+.red01 {
+	color:#ff4b3a;
+}
+.red02 {
+	color:#b059bc;
+}
+.t_d {
+	text-decoration:underline;
+}
+
+.bgf {
+	background:#fff;
+}
+.orange {
+	color:#c59900;
+}
+.pt25 {
+	padding-top:0.5rem;
+}
+.pt2 {
+	padding-top:0.2rem;
+}
+.bb {
+	border-bottom:1px solid #ccc;
+}
+
+.bgcolor01 {
+	background:#fafafa;
+}
+.td2 {
+	text-indent:2em;
+}
+.green {
+	color:#00b05c;
+}
+.p_r {
+	position:relative;
+}
+.pl3 {
+	padding-left:0.3rem;
+}
+.pr3 {
+	padding-right:0.3rem;
+}
+.pl2 {
+	padding-left:0.2rem;
+}
+.pr2 {
+	padding-right:0.2rem;
+}
+.pb2 {
+	padding-bottom:0.2rem;
+}
+.pb5 {
+	padding-bottom:0.5rem;
+}
+.pt5 {
+	padding-top:0.5rem;
+}
+.ml3 {
+	margin-left:0.3rem;
+}
+.mt2 {
+	margin-top:0.2rem;
+}
+.mb2 {
+	margin-bottom:0.2rem;
+}
+.f3 {
+	font-size:0.35rem;
+}
+.f2 {
+	font-size:0.2rem;
+}
+.t_l {
+	text-align:left;
+}
+.b_r {
+	border-right:1px solid #ddd;
+}
+.pb1 {
+	padding-bottom:0.1rem;
+}
+.pt1 {
+	padding-top:0.1rem;
+}
+.dnb {
+	display:inline-block;
+}
+.bod_r {
+	border-radius:0.1rem;
+}
+.d_n {
+	display:none;
+}

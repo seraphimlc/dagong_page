@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<title>推荐职位</title>
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.simplesidebar.js"></script>
+
+</head>
+
+<body>
+<div class="wrap">
+<div class="wrapper">
+<header class="header bgf bb p_r t_c  blue clearfix">
+        <span class="f3">推荐职位</span>
+        <a href="#" class="dnb return nav"></a>
+        <a href="#" class="blue Action dnb">Action</a>
+</header>
+<a href="#"><img src="images/t_06.png" width="100%" class="v_m" /></a>
+<article class="bgf c_9">
+    <ul>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+         <li class="bb pt2 pb2 pl2 pr2">
+              <p><a href="#">服务员</a></p>
+              <div class="clearfix"><span class="l">四川海底捞餐饮股份有限公司</span><span class="red01 r">￥3500~4000</span></div>
+              <p>北京 | 海定区</p>
+         </li>
+    </ul>     
+</article>
+</div>
+
+
+
+
+
+
+
+
+<div id="left-panel" class="panel sidebar">
+      <div class="pt25 pl3 pr3">
+           <div class="clearfix">
+                 <a href="#" class="c_f l"><img src="images/left_03.png" width="22" class="v_m" /> <span class="v_m">设置</span></a>
+                 <a href="#" class="c_f r"><img src="images/left_05.png" width="22" class="v_m" /> <span class="v_m">退出登录</span></a>
+           </div>
+           <div class="t_c pt5">
+                <a href="#"><img src="images/left_10.png" class="v_m" width="140" /></a>
+                <p class="pt2 f3 blue">Zhangsan</p>
+                <p class="c_9">北京市朝阳区</p>
+           </div>
+           <ul class="pt5">
+                <li class="clearfix"><a href="#" class="l c_f"><img src="images/left_14.png" class="v_m" width="25" /> <span class="v_m pl2">我的简历</span></a></li>
+                <li class="clearfix pt2"><a href="#" class="l c_f"><img src="images/left_17.png" class="v_m" width="25" /> <span class="v_m pl2">我的应聘</span></a><span class="r left_span dnb">22</span></li>
+                <li class="clearfix pt2"><a href="#" class="l c_f"><img src="images/left_19.png" class="v_m" width="25" /> <span class="v_m pl2">我的关注</span></a><span class="r left_span left_span01 dnb">5</span></li>
+                <li class="clearfix pt2"><a href="#" class="l c_f"><img src="images/left_21.png" class="v_m" width="25" /> <span class="v_m pl2">我的消息</span></a><span class="r left_span left_span02 dnb">5</span></li>
+                <li class="clearfix pt2"><a href="#" class="l c_f"><img src="images/left_23.png" class="v_m" width="25" /> <span class="v_m pl2">我的评价</span></a></li>
+                <li class="clearfix pt2"><a href="#" class="l c_f"><img src="images/left_25.png" class="v_m" width="25" /> <span class="v_m pl2">我的要求</span></a></li>
+           </ul>
+      </div>
+</div>
+
+
+
+
+
+</div>
+<script>
+$( document ).ready(function() {
+	$.ajaxSetup({
+		cache: false
+	});
+	$( '.sidebar' ).simpleSidebar({
+		settings: {
+			opener: '.nav',
+			wrapper: '.wrapper',
+			animation: {
+				duration: 500,
+				easing: 'easeOutQuint'
+			}
+		},
+		sidebar: {
+			align: 'left',
+			width: 300,
+			closingLinks: 'a',
+		}
+	});
+});
+</script>
+</body>
+</html>
