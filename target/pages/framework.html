@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <title>推荐职位</title>
+    <link href="css/base.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.simplesidebar.js"></script>
+
+</head>
+
+<body>
+<div class="wrap">
+    <div class="wrapper">
+        <header class="header bgf bb p_r t_c  blue clearfix">
+            <span class="f3">推荐职位</span>
+            <a href="#" class="dnb return nav"></a>
+            <a href="#" class="blue Action dnb">Action</a>
+        </header>
+        <div id="maincontent"></div>
+    </div>
+
+
+    <div id="left-panel" class="panel sidebar">
+
+    </div>
+
+
+</div>
+<script>
+    $(document).ready(function () {
+        $.ajaxSetup({
+            cache: false
+        });
+        $('.sidebar').simpleSidebar({
+            settings: {
+                opener: '.nav',
+                wrapper: '.wrapper',
+                animation: {
+                    duration: 500,
+                    easing: 'easeOutQuint'
+                }
+            },
+            sidebar: {
+                align: 'left',
+                width: 300,
+                closingLinks: 'a',
+            }
+        });
+        $("#maincontent").load("/job/user.do");
+        $("#left-panel").load("/userProfile.do");
+
+    });
+</script>
+</body>
+</html>

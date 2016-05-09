@@ -14,20 +14,20 @@
 </head>
 
 <body>
-<div class="wrap">
+< class="wrap">
 
 <header class="header bgf bb p_r t_c f3 blue">
         完善资料
         <a href="#" class="dnb return"></a>
 </header>
 
-
+<form id="saveForm">
 <article class="pl2 pr2 pt2 pb2">
          <div class="bgf">
               <p class="pt1 pl2 blue">请完善您的个人经历</p>
               <img src="images/jb_06.png" width="100%" class="v_m" />
               <div class="pl2 pt1 pr2 pb2">
-                   <textarea rows="5" class="bod_r textarea bod bgcolor01" placeholder="请在此输入您的个人经历"></textarea>
+                   <textarea rows="5" name="experience" class="bod_r textarea bod bgcolor01" placeholder="请在此输入您的个人经历,请认真填写,用人单位可看到该部分内容."></textarea>
               </div>
          </div>
 </article>
@@ -37,24 +37,31 @@
               <p class="pt1 pl2 blue">请描述一下您的个人特长</p>
               <img src="images/jb_06.png" width="100%" class="v_m" />
               <div class="pl2 pt1 pr2 pb2">
-                   <textarea rows="5" class="bod_r textarea bod bgcolor01 " placeholder="请在此输入您的个人特长"></textarea>
+                   <textarea rows="5" name="specialSkill" class="bod_r textarea bod bgcolor01 " placeholder="请在此输入您的个人特长,请认真填写,用人单位可看到该部分内容."></textarea>
               </div>
          </div>
          <input type="button" value="开始找工作" class="c_p vote c_f f3 bod_r mt2" />
 </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+</form>
 </body>
+<script>
+    $(function () {
+        $("#nextStep").click(function () {
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/saveExperience.do",
+                data: $("#saveForm").serialize(),
+                async: false,
+                error: function (request) {
+                    alert(request);
+                },
+                success: function (data) {
+                    window.location.href = ""
+
+                }
+            });
+        });
+    });
+</script>
 </html>
