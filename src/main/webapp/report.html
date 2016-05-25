@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -10,53 +10,56 @@
 <link href="css/base.css" type="text/css" rel="stylesheet" />
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 
-
+     <script type="text/javascript" src="js/mui.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <style>
+    	.rptype{
+    		background-color: #FFFFFF;
+    	}
+    	
+    </style>
 </head>
 
 <body>
-<div class="wrap">
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">举报</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="rptype" >
+	    	 <p>您举报了国美在线/国美在线的架构师职位，请选择您举报的原因，我们将根据您的举报进该职位进行审查。</p>
+	    	<div class="mui-input-row mui-checkbox">
+				<label>中介</label>
+				<input name="checkbox1" value="中介" type="checkbox" >
+			</div>
+			<div class="mui-input-row mui-checkbox">
+				<label>诈骗</label>
+				<input name="checkbox1" value="诈骗" type="checkbox" >
+			</div>
+			<div class="mui-input-row mui-checkbox">
+				<label>收费</label>
+				<input name="checkbox1" value="收费" type="checkbox" >
+			</div>
+			<div class="mui-input-row mui-checkbox">
+				<label>其它</label>
+				<input name="checkbox1" value="其它" type="checkbox" >
+			</div>
+	    </div>
+	    
+	    
 
-<header class="header bgf bb p_r t_c f3 blue">
-        举报
-        <a href="#" class="dnb return"></a>
-</header>
+			<article class="pl2 pr2 pt2 pb2">
+			         <div class="bgf">
+			              <p class="pt1 pl2 blue">投诉描述</p>
+			    
+			              <div class="pl2 pt1 pr2 pb2">
+			                   <textarea rows="5" class="bod_r textarea bod bgcolor01" placeholder="投诉描述"></textarea>
+			              </div>
+			         </div>
+			         <button type="button" class="mui-btn mui-btn-blue mui-btn-block">提交</button>
+			</article>
+	</div>
 
-<article class="mt2 b_t bb bgf pt2 pb2 pl2 pr2">
-     <p>您举报了国美在线/国美在线的架构师职位，请选择您举报的原因，我们将根据您的举报进该职位进行审查。</p>
-     <p class="t_c pt2">
-          <span class="dnb v_m"><span class="check v_m dnb"></span> 中介</span>
-          <span class="dnb v_m ml3"><span class="check v_m dnb"></span> 诈骗</span>
-          <span class="dnb v_m ml3"><span class="check v_m dnb"></span> 收费</span>
-          <span class="dnb v_m ml3"><span class="check v_m dnb"></span> 其它</span>
-     </p>
-</article>
-
-<article class="pl2 pr2 pt2 pb2">
-         <div class="bgf">
-              <p class="pt1 pl2 blue">投诉描述</p>
-              <img src="images/jb_06.png" width="100%" class="v_m" />
-              <div class="pl2 pt1 pr2 pb2">
-                   <textarea rows="5" class="bod_r textarea bod bgcolor01" placeholder="投诉描述"></textarea>
-              </div>
-         </div>
-         <input type="button" value="提交" class="c_p vote c_f f3 bod_r mt2" />
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/tab.js"></script>
 </body>

@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport"
@@ -9,41 +8,379 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-touch-fullscreen" content="yes"/>
     <title>完善资料4</title>
-    <link href="css/base.css" type="text/css" rel="stylesheet"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/mui.min.js" ></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=07PGrhdOY4xKtOSKpEQQxcmD"></script>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+   <script src="js/area_min.js"></script>
+   <script type="text/javascript" src="js/city_min.js" ></script>
+   <script type="text/javascript" src="js/province_min.js" ></script>
+   <style>
+   	   .formgrouptitle{
+   	   	color:#2e8adf;
+   	   	padding-left: 10px;
+   	   }
+   	    #cityname{
+   	    	width: 100%;
+   	    	font-size: 14px;
+   	    	text-align: center;
+   	    }
+   	    .mui-scroll-wrapper{
+   	    	position: relative;
+   	        height: 300px;
+   	    }
+   </style>
+   <script>
+       /*省的id和名称的映射**/
+       var provinceidMapName  = {};
+       /**省的id和市对象的映射****/
+       var provinceidMapcity = {};
+       /**城市id和城市对象的关系***/
+       var cityidMapCity = {};
+       /**城市id和区对象的映射关系**/
+       var cityidMaparea = {};
+   	   mui.ready(mready);
+   	   function mready()
+   	   {
+   	   	   createMap();
+   	   	   document.getElementById("scroller").style.display = "none";
+   	   	   getCurrentCityInfo();
+   	   }
+   	   
+   	   /*
+   	    * 创建一系列的映射关系
+   	    */
+   	    function createMap()
+   	    {
+   	    	var provinceLen = provinceArray.length;
+   	    	for (var i = 0; i < provinceLen; i++) {
+   	    		provinceidMapName[provinceArray[i].ProID] =  provinceArray[i].name;
+   	    	}
+   	    	var citylen = cityArray.length;
+   	    	for (var i1 = 0; i1 < citylen; i1++) {
+   	    		var cityid = cityArray[i1].CityID;
+   	    		var proid = cityArray[i1].ProID;
+   	    		cityidMapCity[cityid] = cityArray[i1];
+   	    		if(provinceidMapcity[proid]==undefined){
+   	    			provinceidMapcity[proid] = [];
+   	    			
+   	    		}
+   	    		provinceidMapcity[proid].push(cityArray[i1]);
+   	    	}
+   	    	
+   	    	var arealen = areaArray.length;
+   	    	for (var i2 = 0; i2 < arealen; i2++) {
+   	    		var cityid =    areaArray[i2].CityID;
+   	    		if(cityidMaparea[cityid]==undefined){
+   	    			cityidMaparea[cityid] = [];
+   	    		}
+   	    		cityidMaparea[cityid].push(areaArray[i2]);
+   	    	}
+   	    	
+   	    }
+   	/**
+   	   * 利用ip获取当前城市的经纬度
+   	   * 创建者 赵磊
+   	   * 创建日期 2016/5/2
+   	   */
+   	   function getCurrentCityInfo()
+   	   {
+   	      	var myCity = new BMap.LocalCity();
+	        myCity.get(locationresult);
+   	   }
+   	   /**
+   	    * 利用百度api使用经纬度获取当前位置 的省市区县
+   	    * @param {Object} result
+   	    */
+   	   function locationresult(result)
+   	   {
+   	   	   var p = new BMap.Point(result.center.lng,result.center.lat);
+   	   	   var geoc = new BMap.Geocoder();
+   	   	   geoc.getLocation(p, function(rs){
+   	   	   		var addComp = rs.addressComponents;
+				var content = addComp.province + "," + addComp.city + "," + addComp.district;
+				
+				document.getElementById("cityname").innerText = "当前城市："+content;
+   	   	   });	
+   	   }
+   	   /**
+   	    * 根据文本输入的省城市或是区县的名称
+   	    * 模糊查询出当前输入的文字代表的所有省市县
+   	    * 先从三个数组里面挨个搜索一下，看看能不能搜索 到相应名称 
+   	    * 如果在省份中搜索到，然后把这个关键词搜索到的结果
+   	    * 到所有市集合当中用proid进行搜索，按照每个省的所有市进行列举
+   	    * 如果从市当中搜索出来，然后用市的proid找到所在省，在到区当中
+   	    * 用cityid找到所有区
+   	    * 创建者 赵磊
+   	    * 创建日期 2016/5/4
+   	    */
+   	  function searchCityInfo()
+   	  {
+   	  	  var content = document.getElementById("txt_search").value;
+   	  	  var citylist = document.getElementById("citylist");
+   	  	 document.getElementById("scroller").style.display = "none";
+   	  	  citylist.innerHTML = "";
+   	  	  var reg = /^[\u4e00-\u9fa5]+$/i; 
+   	  	 
+   	  	   if( reg.test(content)==false)
+   	  	   {
+   	  	   	 
+   	  	   	 return;
+   	  	   }
+   	  	  
+   	
+   	  	  var provinceLen = provinceArray.length;
+   	  	  var provinceResultArray = [];
+   	  	  /**证明在省份里面是否搜索到了省份*/
+   	  	  var provinceExist = false;
+   
+// 	  	   
+   	  	  for (var i = 0; i < provinceLen; i++) {
+   	  	  	   /**用省份的名字和当前输入 的文字进行匹配*/
+   	  	  	   var po = provinceArray[i];
+   	  	  	   if(po.name.indexOf(content)!=-1)
+   	  	  	   {
+   	  	  	       provinceExist = true;
+   	  	  	       provinceResultArray.push(po);
+   	  	  	   }
+   	  	  	   
+   	  	  }
+   	  	 
+// 	
+   	  	  if(provinceExist==true)
+   	  	  {
+   	  	  	  makeTextFromProvince(provinceResultArray);
+   	  	  	  return;
+   	  	  }
+// 	  	  /**到城市里面去搜索**/
+   	  	  var citylen =cityArray.length; 
+   	  	  var cityResultArray = [];
+   	  	  var cityExist = false;
+   	  	  for (var i1 = 0; i1 < citylen; i1++) {
+   	  	  	   /**用省份的名字和当前输入 的文字进行匹配*/
+   	  	  	   var po = cityArray[i1];
+   	  	  	   if(po.name.indexOf(content)!=-1)
+   	  	  	   {
+   	  	  	       cityExist = true;
+   	  	  	       cityResultArray.push(po);
+   	  	  	   }
+   	  	  	   
+   	  	  }
+   	  	  if(cityExist==true)
+   	  	  {
+   	  	  	  makeTextFromCity(cityResultArray);
+   	  	  	  return;
+   	  	  }
+   	  	  var arealen = areaArray.length;
+   	  	  var areaResultArray = [];
+   	  	   for (var i2 = 0; i2 < arealen; i2++) {
+   	  	  	   /**用省份的名字和当前输入 的文字进行匹配*/
+   	  	  	   var po = areaArray[i2];
+   	  	  	   if(po.DisName.indexOf(content)!=-1)
+   	  	  	   {
+   	  	  	      
+   	  	  	       areaResultArray.push(po);
+   	  	  	   }
+   	  	  	   
+   	  	  }
+   	  	  
+   	  	   makeyTextFromArea(areaResultArray);
+   	  	   
+   	  }
+   	  /**
+   	   * 判断是否是数字
+   	   * @param {Object} obj
+   	   */
+   	  function isNumber(obj){ 
+		return (typeof obj=='number')&&obj.constructor==Number; 
+	  } 
+	  /**
+	   * 判断是否为字符串
+	   * @param {Object} str
+	   */
+	  function isString(str){ 
+		return (typeof str=='string')&&str.constructor==String; 
+	  } 
+	  /**
+   	   * 从省的搜索结果当中组成城市列表
+   	   *  然后找地市
+   	   * 最终的内容
+   	   */
+   	  function makeTextFromProvince(province_Array)
+   	  {
+   	  	 var len  = province_Array.length;
+   	  	 var resultArray = [];
+   	  	 var oneLineText = "";
+   	  	 /**省的名称*/
+   	  	 var provincename = "";
 
+   	  	 /**城市的名称***/
+   	  	 var cityname = "";
+   	  	 for (var i = 0; i < len; i++) {
+   	  	 	/**取出省的名称***/
+   	  	 	 provincename = province_Array[i].name;
+   	  	 	 /***取省所有包括市的信息***/
+   	  	 	 var cityArray = provinceidMapcity[province_Array[i].ProID];
+   	  	 	 var cityLen = cityArray.length;
+   	  	 	 for (var j = 0; j <cityLen; j++) {
+   	  	 	 	/***得到市的名称**/
+   	  	 	 	cityname = cityArray[j].name;
+   	  	 	 	
+   	  	 	 	/**在取出市包括的所有区，如果发现没有对应值就不取了**/
+   	  	 	 	if(cityidMaparea[cityArray[j].CityID]==undefined){
+   	  	 	 		continue;
+   	  	 	 	}
+   	  	 	 	/**在取出市包括的所有区***/
+   	  	 	 	var areaArray = cityidMaparea[cityArray[j].CityID];
+   	  	 	 	
+   	  	 	 	var arealen = areaArray.length;
+   	  	 	 	for (var k = 0; k < arealen; k++) {
+   	  	 	 		oneLineText = provincename +","+cityname+","+ areaArray[k].DisName;
+   	  	 	 		resultArray.push(oneLineText);
+   	  	 	 	}
+   	  	 	 }
+   	  	 }
+   	  	 
+   	  	 createCityResultText(resultArray);
+   	  }
+   	  /**
+   	   * 从市的搜索结果当中组成最终城市列表的最终内容
+   	   */
+   	  function makeTextFromCity(city_Array)
+   	  {
+   	  	   var resultArray = [];
+   	  	   var len  = city_Array.length;
+   	  	   var oneLineText = "";
+   	  	   var province = "";
+   	  	   for (var i = 0; i < len; i++) {
+   	  	   	   /***省的名称***/
+   	  	   	   province = provinceidMapName[city_Array[i].ProID];
+   	  	   	   /**取出当前城市id代表的所有区的数组**/
+   	  	   	   var areaArray = cityidMaparea[city_Array[i].CityID];
+   	  	 	   var arealen = areaArray.length;
+   	  	 	   //循环
+   	  	 	   for (var k = 0; k < arealen; k++) {
+   	  	 	 		oneLineText = province +","+city_Array[i].name+","+ areaArray[k].DisName;
+   	  	 	 		resultArray.push(oneLineText);
+   	  	 	    }
+   	  	   }
+   	  	   createCityResultText(resultArray);
+   	  }
+   	  /**
+   	   *  从区开始搜索城市再搜索所在省份进行
+   	   *  
+   	   */
+   	  function makeyTextFromArea(area_Array)
+   	  {
+   	  	 var resultArray = [];
+   	  	 var len = area_Array.length;
+   	  	 var oneLineText = "";
+   	  	 var province = "";
+   	  	 var city = "";
+   	  	 for (var i = 0; i < len; i++) {
+   	  	 	/**获取城市对象***/
+   	  	 	 var cityObject = cityidMapCity[area_Array[i].CityID];
+   	  	 	 /**城市名称**/
+   	  	 	 city = cityObject.name;
+   	  	 	 /**获取省的名称**/
+   	  	 	 province = provinceidMapName[cityObject.ProID];
+   	  	 	 /**area_Array[i].DisName 区的名称*/
+   	  	 	 oneLineText = province+","+ city+","+area_Array[i].DisName;
+   	  	 	 
+   	  	 	 resultArray.push(oneLineText);
+   	  	 }
+   	  	 createCityResultText(resultArray);
+   	  }
+   	  /**
+   	   * 创建最终citylist里面的内容
+   	   */
+   	  function createCityResultText(result)
+   	  {
+   	     document.getElementById("scroller").style.display = "block";
+   	      var len = result.length;
+   	      var citylist = document.getElementById("citylist");
+   	      for (var i = 0; i < len; i++) {
+   	      	  var li = document.createElement("li");
+   	  	  	  li.setAttribute("class","mui-table-view-cell");
+   	  	  	  li.addEventListener("tap",cityNameClick)
+   	  	  	  li.innerText = result[i];
+   	  	  	  citylist.appendChild(li);
+   	  	  	 
+   	      }
 
+   	  	 
+   	  }
+   	  /**
+   	   * 选择每一行城市名称时给cityname赋值
+   	   * 
+   	   */
+   	  function cityNameClick()
+   	  {
+   	  	  document.getElementById("cityname").innerText = this.innerText;
+   	  	  document.getElementById("citylist").innerHTML = "";
+   	  }
+   	  /*当搜索框文字为空的时候清空citylist的内容*/
+   	  function txt_search_change()
+   	  {
+   	  	 var content = document.getElementById("txt_search").value;
+   	  	 if(content ==""){
+   	  	 	document.getElementById("citylist").innerHTML = "";
+   	  	 	document.getElementById("scroller").style.display = "none";
+   	  	 }
+   	  }
+   </script>
 </head>
 
 <body>
-<div class="wrap">
-
-    <header class="header bgf bb p_r t_c f3 blue">
-        完善资料
-        <a href="#" class="dnb return"></a>
+	 <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">完善资料</h1>
     </header>
+<div class="mui-content">
+  
+    <form class="mui-input-group">
+    	 <p class="formgrouptitle">工作环境要求</p>
+        <div class="mui-input-row mui-checkbox"  onclick="select(1)">
+			<label>五险一金</label>
+			<input name="checkbox1" value="Item 3" type="checkbox">
+		</div>
+		<div class="mui-input-row mui-checkbox"  onclick="select(2)">
+			<label>年终奖</label>
+			<input name="checkbox1" value="Item 3" type="checkbox" >
+		</div>
+		<div class="mui-input-row mui-checkbox" onclick="select(3)">
+			<label>年底双薪</label>
+			<input name="checkbox1" value="Item 3" type="checkbox" >
+		</div>
+		<div class="mui-input-row mui-checkbox" onclick="select(4)">
+			<label>带薪年假</label>
+			<input name="checkbox1" value="Item 3" type="checkbox" >
+		</div>
+		
+		<div class="mui-input-row mui-checkbox" onclick="select(5)">
+			<label>年底免费体检</label>
+			<input name="checkbox1" value="Item 3" type="checkbox" >
+		</div>
+		<p class="formgrouptitle">期望工作地点</p>
+		<p id="cityname"> </p>
+		<div class="mui-input-row mui-search">
+			<input id="txt_search" type="search" class="mui-input-clear" oninput="searchCityInfo()" onkeyup="txt_search_change()" placeholder="输入省或城市或区县名称">
+	    </div>
+	    
+	      <div id="scroller"  class="mui-scroll-wrapper">
+		 	<!-- 滚动条-->  
+	          <div class="mui-scroll">
+					<ul id="citylist" class="mui-table-view">
+					
+						
+					</ul>
+			</div>	
+		</div>
+	    	
+	   
+	   
+    </form>
 
-    <article class="pl2 pr2 pt2 pb2">
-        <div class="bgf">
-            <p class="pt1 pl2 pr2 blue">工作环境要求</p>
-            <img src="images/jb_06.png" width="100%" class="v_m"/>
-
-            <div class="pl2 pt1 pr2 pb2">
-                <ul class="click">
-                    <li class="clearfix bb pl2 pr2 pt2 pb2" onclick="select(1);"><span class="l">五险一金</span><span
-                            class="r dnb s_span"></span></li>
-                    <li class="clearfix bb pl2 pr2 pt2 pb2" onclick="select(2);"><span class="l">年终奖</span><span
-                            class="r dnb s_span"></span></li>
-                    <li class="clearfix bb pl2 pr2 pt2 pb2" onclick="select(3);"><span class="l">年底双薪</span><span
-                            class="r dnb s_span"></span></li>
-                    <li class="clearfix bb pl2 pr2 pt2 pb2" onclick="select(4);"><span class="l">带薪年假</span><span
-                            class="r dnb s_span"></span></li>
-                    <li class="clearfix bb pl2 pr2 pt2 pb2" onclick="select(5);"><span class="l">年度免费体检</span><span
-                            class="r dnb s_span"></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bgf mt2">
+        <!--<div class="bgf mt2">
             <p class="pt1 pl2 pr2 blue">期望工作地点</p>
 
             <div class="pl2 pt1 pr2 pb2">
@@ -64,17 +401,17 @@
                     </tr>
                 </table>
             </div>
-        </div>
-        <input id="nextStep" type="button" value="下一步" class="c_p vote c_f f3 bod_r mt2"/>
-    </article>
+        </div>-->
+        <!--<input id="nextStep" type="button" value="下一步" class="c_p vote c_f f3 bod_r mt2"/>-->
+    
 
-<form id="saveForm">
+<!--<form id="saveForm">
     <input type="hidden" name="environment" id="environment_1" value="">
     <input type="hidden" name="environment" id="environment_2" value="">
     <input type="hidden" name="environment" id="environment_3" value="">
     <input type="hidden" name="environment" id="environment_4" value="">
     <input type="hidden" name="environment" id="environment_5" value="">
-</form>
+</form>-->
 
 </div>
 <script src="js/jquery-1.8.3.min.js"></script>
@@ -102,6 +439,8 @@
             });
         });
     });
+    
+    mui('.mui-scroll-wrapper').scroll();
 </script>
 </body>
 </html>

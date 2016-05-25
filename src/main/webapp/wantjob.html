@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport"
@@ -9,61 +8,149 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-touch-fullscreen" content="yes"/>
     <title>完善资料2</title>
+
     <link href="css/base.css" type="text/css" rel="stylesheet"/>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/mui.min.js" ></script>
+   
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    
+   <style>
+      
+   	  .selectgroup{
+   	  	 margin-left: 10px;
+   	 	 width: 80px;
+   	  }
+   	  .selectgroup2{
+   	  	margin-left: 10px;
+   	  	width: 120px;
+   	  	margin-top: 5px;
+   	  }
+   	  /*职业类型*/
+   	  .worktype3{
+   	     width: 100%;
+   	  	 padding:11px 15px;
+   	  }
+   	   #thirdLevel{
+   	   	  margin-top: 5px;
+   	   }
+   	   .worktype1{
+   	   	 position: relative;
+   	     width: 100%;
+   	     padding:11px 15px;
+   	   }
+   	   .line1{
+   	   	   position: relative;
+   	   	  right: 0;
+   	   	  bottom: 0;
+   	   	  left: 15px;
+   	   	  height: 1px;
+   	 
+   	   	  width: 100%;
+   	   	  background-color:#c8c7cc;
+   	   }
+   	   .worktype1 label{
+   	      float: left;
+   	      line-height: 2;
+   	   }
+   	
+   	    .formgrouptitle{
+   	   		color:#2e8adf;
+   	   		padding-left: 10px;
+   	   }
+   </style>
+   <script>
+   	   mui.ready(mready)
+   	   function mready()
+   	   {
+   	   	selectJobType(0, "firstLevel");
+        var jobId = selectJobType(1, "secondLevel");
+        selectSecondLevel(jobId);
 
-
+   	   	  
+   	   }
+   	  function setBtnBlue()
+   	  {
+   	  	   var ss = document.getElementsByClassName("selectgroup");
+   	   	   addColorChangeListener(ss);
+   	   	   var ss2 = document.getElementsByClassName("selectgroup2");
+   	   	   addColorChangeListener(ss2);
+   	  }
+   	  
+   	  function addColorChangeListener(ss)
+   	  {
+   	  	for (var i = 0; i < ss.length; i++) {
+	   	   	   	ss[i].isBlue = false;
+	   	   	   	ss[i].addEventListener("tap",function(e){
+	   	   	   			
+	   	   	   		
+					   if(this.isBlue==false){
+					   	    this.isBlue=true;
+					   		this.classList.add("mui-btn-blue"); 
+					   }else{
+					   	    this.isBlue=false;
+					   		this.classList.remove("mui-btn-blue");
+					   		
+					   }
+					   
+	   	   	   		
+	   	   	   	})
+   	   	   }
+   	  }
+   	  
+   </script>
 </head>
 
 <body>
-<div class="wrap">
 
-    <header class="header bgf bb p_r t_c f3 blue">
-        完善资料
-        <a href="#" class="dnb return"></a>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">完善资料</h1>
     </header>
-    <form id="saveForm">
-        <article class="pl2 pr2 pt2 pb2">
-            <div class="bgf">
-                <p class="pt1 pl2 pr2 blue">请选择您希望从事的行业和职业</p>
-                <img src="images/jb_06.png" width="100%" class="v_m"/>
-
-                <div class="pl2 pt1 pr2 pb2">
-                    <table width="100%">
-                        <tr>
-                            <td class="t_r pt1 pb1" width="70">从事职业：</td>
-                            <td class="pt1  clearfix bb pb1"><select class=" txt v_m c_9"
-                                                                     onchange="selectJobType(this.value,'secondLevel');"
-                                                                     id="firstLevel">
-
-                            </select></td>
-                        </tr>
-                        <tr>
-                            <td class="t_r pt1 pb1">从事职业：</td>
-                            <td class="pt1  clearfix bb pb1"><select class=" txt v_m c_9"
-                                                                     onchange="selectSecondLevel(this.value);"
-                                                                     id="secondLevel">
-                            </select></td>
-                        </tr>
-                        <tr>
-                            <td class="t_r pt1 pb1">从事职业：</td>
-                            <td class="pt1  clearfix bb pb1 pl3">
-
-                                <div id="thirdLevel">
-
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <input type="button" value="下一步" class="c_p vote c_f f3 bod_r mt2"/>
-        </article>
-    </form>
-</div>
+    <div class="mui-content">
+      <form id="saveForm" class="mui-input-group">
+      	<p class="formgrouptitle">请选择您希望从事的行业和职业</p>
+  <!--    	<img src="images/jb_06.png" width="100%" class="v_m"/>-->
+          
+          <div class="mui-input-row">
+              <label>行业类别1:</label>
+              <select class=" txt v_m c_9"
+                                       onchange="selectJobType(this.value,'secondLevel');"
+                                       id="firstLevel"></select>
+          </div>
+          <div class="mui-input-row">
+              <label>行业类别2:</label>
+              <select id="secondLevel" class=" txt v_m c_9"
+                                        onchange="selectSecondLevel(this.value);"
+                                      ></select>
+          </div>
+          <div  class="worktype1">
+              <label>热门职业:</label>
+            <button type="button"  class="mui-btn mui-btn-blue selectgroup">快递员</button>
+			<button type="button"  class="mui-btn selectgroup">服务员</button>
+			<button type="button"  class="mui-btn selectgroup">送餐员</button>
+			<button type="button"  class="mui-btn selectgroup">厨师</button>
+			
+          </div>
+          <div class="line1"></div>
+          <div class="worktype3">
+              <label>行业类别3:</label>
+               <div id="thirdLevel">
+              	
+              </div>
+                
+          </div>
+         
+           
+      </form>
+    
+       <div class="mui-content-padded">
+			<button id='login' class="mui-btn mui-btn-block mui-btn-primary">下一步</button>
+				
+		</div>
 </body>
 <script src="js/jobTypes.js"></script>
-<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/iscroll.js"></script>
 <script src="js/tab.js"></script>
 
@@ -92,12 +179,7 @@
     function selectFirstLevel(jobId) {
         alert(jobId);
     }
-    $(document).ready(function () {
-        selectJobType(0, "firstLevel");
-        var jobId = selectJobType(1, "secondLevel");
-        selectSecondLevel(jobId);
-
-    });
+ 
 
     function selectJobType(jobId, level) {
         var jobList = jobTypes[jobId];
@@ -116,14 +198,16 @@
         var list = "";
         for (var index in jobList) {
 
-            list += "<input type='checkbox' class='v_m' value='" + jobList[index].id + "' name='jobType'/>  " + jobList[index].name + " ";
+            list += "<button type='button' class='mui-btn selectgroup2'   jobid='" + jobList[index].id + "' name='jobType'>  " + jobList[index].name + "</button> ";
 
-            if (index % 4 == 3) {
-                list += "</br>";
-            }
+//          if (index % 4 == 3) {
+//              list += "</br>";
+//          }
         }
 
         $("#thirdLevel").html(list);
+        
+        setBtnBlue();
     }
 </script>
 </html>

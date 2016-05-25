@@ -165,7 +165,11 @@
 
 
 /*应聘记录*/
-.tg_bg {
+.tg_bg_pass {
+	background:url(../images/y_03.png) right bottom no-repeat;
+	background-size:60px auto;
+}
+.tg_bg_fail {
 	background:url(../images/y_03.png) right bottom no-repeat;
 	background-size:60px auto;
 }

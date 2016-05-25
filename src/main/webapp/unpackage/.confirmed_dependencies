@@ -1,0 +1,56 @@
+{
+  "wantjob.html": {
+    "resources": [
+      "css/base.css",
+      "js/tab.js",
+      "js/jquery-1.11.1.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "images/jb_06.png",
+      "images/2_03.png",
+      "js/iscroll.js",
+      "css/mui.min.css",
+      "js/jobTypes.js",
+      "css/style.css",
+      "images/jb_03.png"
+    ],
+    "refer": []
+  },
+  "folloJob.html": {
+    "resources": [
+      "css/base.css",
+      "images/m_03.png",
+      "images/m_05.png",
+      "images/footer_04.png",
+      "images/h_01.png",
+      "css/style.css",
+      "images/t_06.png",
+      "images/footer_04-03.png",
+      "images/footer_10.png"
+    ],
+    "refer": []
+  },
+  "applyList.html": {
+    "resources": [
+      "css/base.css",
+      "images/y_03.png",
+      "js/jquery-1.8.3.min.js",
+      "js/tab.js",
+      "css/style.css",
+      "images/jb_03.png"
+    ],
+    "refer": []
+  },
+  "wantenvironment.html": {
+    "resources": [
+      "js/jquery-1.8.3.min.js",
+      "js/city.js",
+      "js/tab.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "js/area.js",
+      "css/mui.min.css",
+      "js/province.js"
+    ]
+  }
+}
