@@ -2,92 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28c2cb4-3f2f-457f-86ad-4e32c72a0cfb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/mui.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/appList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/mui.dtpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/mui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/mui.picker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/joblist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/area.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/area_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/city.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/city_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/mui.dtpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/mui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/mui.picker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/province.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/province_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/my.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/unpackage/.confirmed_dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/unpackage/.dependencies" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/完善资料3.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/MFCB732.tmp" afterPath="$PROJECT_DIR$/src/main/webapp/css/MFCB732.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/2_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/2_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/bg_02.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/bg_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/footer_01.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/footer_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/footer_04-03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/footer_04-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/footer_04.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/footer_04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/footer_10.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/footer_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h2_01.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h2_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h2_02.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h2_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h2_06.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h2_06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h_01.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h_04.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h_04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h_07.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h_07.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/h_10.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/h_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/jb_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/jb_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/jb_06.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/jb_06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/jb_07.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/jb_07.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/jb_09.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/jb_09.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_05.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_10.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_14.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_14.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_17.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_17.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_19.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_21.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_21.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_23.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_23.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_25.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/left_bg.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/left_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/m_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/m_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/m_05.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/m_05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/nav.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/nav.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/s_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/s_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/s_07.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/s_07.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/s_10.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/s_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/t_06.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/t_06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/up_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/up_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/y_03.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/y_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/z_03_01.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/z_03_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/z_03_04.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/z_03_04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/images/z_03_06.png" afterPath="$PROJECT_DIR$/src/main/webapp/images/z_03_06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp.tar.gz" afterPath="$PROJECT_DIR$/src/main/webapp.tar.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/base.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/idangerous.swiper.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/idangerous.swiper.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/experience.html" afterPath="$PROJECT_DIR$/src/main/webapp/experience.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/folloJob.html" afterPath="$PROJECT_DIR$/src/main/webapp/folloJob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/framework.html" afterPath="$PROJECT_DIR$/src/main/webapp/framework.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jobDetail.html" afterPath="$PROJECT_DIR$/src/main/webapp/jobDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/date.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/idangerous.swiper.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/idangerous.swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/iscroll.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/iscroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jobTypes.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jobTypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.8.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery.simplesidebar.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.simplesidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/tab.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/person.html" afterPath="$PROJECT_DIR$/src/main/webapp/person.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/recommand.html" afterPath="$PROJECT_DIR$/src/main/webapp/recommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/report.html" afterPath="$PROJECT_DIR$/src/main/webapp/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/search.html" afterPath="$PROJECT_DIR$/src/main/webapp/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/wantenvironment.html" afterPath="$PROJECT_DIR$/src/main/webapp/wantenvironment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/wantjob.html" afterPath="$PROJECT_DIR$/src/main/webapp/wantjob.html" />
     </list>
     <ignored path="dagong_page.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,61 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="framework.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="framework.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/framework.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jobDetail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applyList.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/applyList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="393">
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -174,28 +42,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="joblist.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/joblist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recommand.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/recommand.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            <state relative-caret-position="176">
+              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -238,8 +86,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/experience.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/recommand.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/framework.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/folloJob.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/framework.html" />
       </list>
     </option>
   </component>
@@ -292,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,69 +214,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dagong_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dagong_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dagong_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dagong_page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dagong_company" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
@@ -903,7 +700,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -911,14 +708,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29638556" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3819277" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34477827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34477827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -955,13 +752,15 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57349396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34698796" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5732484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54337347" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34477827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1195,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/folloJob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/joblist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1220,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="715">
           <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1281,17 +1069,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/framework.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="1140">
           <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
           <folding />
         </state>
@@ -1323,18 +1103,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/applyList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="6" />
+        <state relative-caret-position="2774">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/applyList.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/folloJob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="19">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/framework.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding />
         </state>
       </provider>

@@ -37,10 +37,10 @@
 </div>
 <nav class="nav_bottom bgf b_t">
     <ul class="t_c clearfix">
-        <li class="l"><a href="#" class="n_bg1 on">推荐</a></li>
-        <li class="l"><a href="#" class="n_bg2">关注</a></li>
-        <li class="l"><a href="#" class="n_bg3">应聘记录</a></li>
-        <li class="l"><a href="#" class="n_bg4">消息</a></li>
+        <li class="l"><a href="javascript:void(0);" onclick="myRecommend()" class="n_bg1 on">推荐</a></li>
+        <li class="l"><a href="javascript:void(0);" onclick="myFollow()" class="n_bg2">关注</a></li>
+        <li class="l"><a href="javascript:void(0);" onclick="myApply()" class="n_bg3">应聘记录</a></li>
+        <li class="l"><a href="javascript:void(0);" class="n_bg4">消息</a></li>
     </ul>
 </nav>
 <script>
@@ -63,10 +63,15 @@
                 closingLinks: 'a',
             }
         });
-        $("#maincontent").load("/job/recommend.do");
+        myRecommend();
         $("#left-panel").load("/userProfile.do");
 
     });
+
+    function myRecommend() {
+        $("#maincontent").load("/job/recommend.do");
+        $("#title").html("推荐职位");
+    }
 
     function myApply() {
         $("#maincontent").load("/apply/userApply.do");
